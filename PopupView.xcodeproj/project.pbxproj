@@ -143,10 +143,10 @@
 		877A4FA51FF09858007A47D5 /* PopupView */ = {
 			isa = PBXGroup;
 			children = (
-				877A4FA61FF09858007A47D5 /* PopupAlertView.swift */,
-				877A4FA71FF09858007A47D5 /* PopupItem.swift */,
-				877A4FA81FF09858007A47D5 /* PopupSheetView.swift */,
 				877A4FA91FF09858007A47D5 /* PopupView.swift */,
+				877A4FA61FF09858007A47D5 /* PopupAlertView.swift */,
+				877A4FA81FF09858007A47D5 /* PopupSheetView.swift */,
+				877A4FA71FF09858007A47D5 /* PopupItem.swift */,
 			);
 			path = PopupView;
 			sourceTree = "<group>";

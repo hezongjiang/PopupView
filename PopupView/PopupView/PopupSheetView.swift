@@ -31,7 +31,14 @@ class PopupSheetView: PopupView {
     /// 按钮模型
     private var items: [PopupItem]?
     
+//    override var popType: PopupType {
+//        didSet {
+//            popType = .sheet
+//        }
+//    }
+    
     init(message: String?, items: [PopupItem], showCancel: Bool = true) {
+        
         super.init(frame: CGRect())
         
         popType = .sheet
@@ -98,7 +105,7 @@ class PopupSheetView: PopupView {
         super.layoutSubviews()
         
         let buttonH: CGFloat = 50
-        
+
         if messageLabel.text != nil {
             messageView.frame = CGRect(x: 0, y: 0, width: popupView.bounds.width, height: buttonH)
             messageLabel.frame = CGRect(x: margin, y: 0, width: messageView.bounds.width - 2 * margin, height: messageView.bounds.height)
@@ -113,7 +120,7 @@ class PopupSheetView: PopupView {
         cancelButton.frame = CGRect(x: 0, y: buttonsView.frame.maxY + 5, width: popupView.bounds.width, height: buttonH)
         
         popupView.frame = CGRect(x: 0, y: bounds.height - cancelButton.frame.maxY, width: bounds.width, height: cancelButton.frame.maxY)
-        
+        print("sheet: \(#function)--\(popupView.frame)")
     }
     
     required init?(coder aDecoder: NSCoder) {

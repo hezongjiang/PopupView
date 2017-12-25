@@ -12,7 +12,6 @@ private let margin: CGFloat = 10
 
 class PopupAlertView: PopupView {
 
-    
     /// 标题
     private let titleLabel = UILabel()
     
@@ -112,6 +111,7 @@ class PopupAlertView: PopupView {
         }
         
         let buttons = buttonsView.subviews
+        
         if buttons.count == 0 {
             popupView.frame.size.height = buttonsViewY
             popupView.center = center
@@ -136,6 +136,7 @@ class PopupAlertView: PopupView {
         
         popupView.frame.size.height = buttonsView.frame.maxY
         popupView.center = center
+        print("\(#function): \(popupView.frame)")
     }
     
     required init?(coder aDecoder: NSCoder) {

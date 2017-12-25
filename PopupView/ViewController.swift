@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         }
         let popView = PopupAlertView(title: "标题", message: "内容信息，此处可填写很多很多很多的内", items: [item1, item2])
         popView.show()
+        popView.popType = .alert
     }
     
     @IBAction func actionSheetStyle(_ sender: UIButton) {
@@ -40,13 +41,9 @@ class ViewController: UIViewController {
     }
     
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
-        UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
     }
 }
 
