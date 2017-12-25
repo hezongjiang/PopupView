@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="4Ru-En-mD2" customClass="CustomView" customModule="PopupView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ig4-pu-d0B">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="150"/>
+                    <date key="date" timeIntervalSinceReferenceDate="535863171.76650101">
+                        <!--2017-12-25 02:52:51 +0000-->
+                    </date>
+                </datePicker>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ig4-pu-d0B" firstAttribute="leading" secondItem="CNM-pt-fHa" secondAttribute="leading" id="29T-C7-DdW"/>
+                <constraint firstItem="ig4-pu-d0B" firstAttribute="bottom" secondItem="CNM-pt-fHa" secondAttribute="bottom" id="YXn-Wm-yi1"/>
+                <constraint firstItem="ig4-pu-d0B" firstAttribute="trailing" secondItem="CNM-pt-fHa" secondAttribute="trailing" id="ljE-gd-b2U"/>
+                <constraint firstItem="ig4-pu-d0B" firstAttribute="top" secondItem="4Ru-En-mD2" secondAttribute="top" id="vQ3-eP-eI0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="CNM-pt-fHa"/>
+            <point key="canvasLocation" x="-208" y="-143"/>
+        </view>
+    </objects>
+</document>
